@@ -6,8 +6,8 @@ wasm-bindgen --no-typescript --target web \
     --out-name "snail_space" \
     ./target/wasm32-unknown-unknown/release/snail_space.wasm
 
-Then in this window's terminal run this:
-wasm-opt -Oz -o snail_space_bg.wasm snail_space_bg.wasm
+Then in this window's terminal run this (wait until terminal returns a response):
+wasm-opt -O3 -o snail_space_bg.wasm snail_space_bg.wasm
 
 Then to commit:
 git pull
