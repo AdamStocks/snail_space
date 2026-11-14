@@ -10,4 +10,13 @@ Then in this window's terminal run this:
 wasm-opt -Oz -o snail_space_bg.wasm snail_space_bg.wasm
 
 Then to commit:
-git add -A
+git pull
+
+git add -A 
+or 
+git add .
+
+git commit -m ""
+with commit message in the quotes
+
+git push
