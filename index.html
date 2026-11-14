@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<link src="page.css"></link>
+
+<html>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+<script type="module" style="margin: 0px;">
+    import init from '/snail_space.js'
+
+    init().catch((error) => {
+      if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
+        throw error;
+      }
+    });
+</script>
+</body>
+</html>
